@@ -15,7 +15,7 @@ jobs:
     
     steps:
     - name: Checkout code
-      uses: actions/checkout@v2
+      uses: actions/checkout@v3
     
     - name: Install Flutter
       uses: subosito/flutter-action@v1
@@ -30,7 +30,7 @@ jobs:
     #   run: flutter test
     
     - name: Build release project
-      run: flutter build web --base-href='/nylo/'
+      run: flutter build web --base-href='/responsive_note_app/'
 
     - name: Upload production-ready build files
       uses: actions/upload-artifact@v2
