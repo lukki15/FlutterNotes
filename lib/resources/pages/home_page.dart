@@ -1,3 +1,4 @@
+import 'package:flutter_app/resources/components/list_of_notes.dart';
 import 'package:nylo_framework/nylo_framework.dart';
 import 'package:flutter/material.dart';
 import '/resources/widgets/responsive.dart';
@@ -20,7 +21,7 @@ class _Mobile extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return EmailScreen();
+    return ListOfNotes();
   }
 }
 
@@ -32,11 +33,11 @@ class _Tablet extends StatelessWidget {
     return Row(children: [
       Expanded(
         flex: 6,
-        child: ListOfEmails(),
+        child: ListOfNotes(),
       ),
       Expanded(
         flex: 9,
-        child: EmailScreen(),
+        child: _EmailScreen(),
       )
     ]);
   }
@@ -52,22 +53,22 @@ class _Desktop extends StatelessWidget {
     return Row(children: [
       Expanded(
         flex: _size.width > 1340 ? 2 : 4,
-        child: SideMenu(),
+        child: _SideMenu(),
       ),
       Expanded(
         flex: _size.width > 1340 ? 3 : 5,
-        child: ListOfEmails(),
+        child: ListOfNotes(),
       ),
       Expanded(
         flex: _size.width > 1340 ? 8 : 10,
-        child: EmailScreen(),
+        child: _EmailScreen(),
       )
     ]);
   }
 }
 
-class SideMenu extends StatelessWidget {
-  const SideMenu({super.key});
+class _SideMenu extends StatelessWidget {
+  const _SideMenu({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -75,17 +76,8 @@ class SideMenu extends StatelessWidget {
   }
 }
 
-class ListOfEmails extends StatelessWidget {
-  const ListOfEmails({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return const Placeholder();
-  }
-}
-
-class EmailScreen extends StatelessWidget {
-  const EmailScreen({super.key});
+class _EmailScreen extends StatelessWidget {
+  const _EmailScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
