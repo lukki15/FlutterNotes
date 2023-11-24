@@ -17,8 +17,6 @@ class HomePage extends NyPage {
 }
 
 class _Mobile extends StatelessWidget {
-  const _Mobile({super.key});
-
   @override
   Widget build(BuildContext context) {
     return ListOfNotes();
@@ -26,8 +24,6 @@ class _Mobile extends StatelessWidget {
 }
 
 class _Tablet extends StatelessWidget {
-  const _Tablet({super.key});
-
   @override
   Widget build(BuildContext context) {
     return Row(children: [
@@ -44,8 +40,6 @@ class _Tablet extends StatelessWidget {
 }
 
 class _Desktop extends StatelessWidget {
-  const _Desktop({super.key});
-
   @override
   Widget build(BuildContext context) {
     Size _size = MediaQuery.of(context).size;
@@ -68,8 +62,6 @@ class _Desktop extends StatelessWidget {
 }
 
 class _SideMenu extends StatelessWidget {
-  const _SideMenu({super.key});
-
   @override
   Widget build(BuildContext context) {
     return const Placeholder();
@@ -77,8 +69,6 @@ class _SideMenu extends StatelessWidget {
 }
 
 class _EmailScreen extends StatelessWidget {
-  const _EmailScreen({super.key});
-
   @override
   Widget build(BuildContext context) {
     return const Placeholder();
