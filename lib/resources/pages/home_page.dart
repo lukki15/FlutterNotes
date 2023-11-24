@@ -1,4 +1,4 @@
-import 'package:flutter_app/resources/components/list_of_notes.dart';
+import 'package:flutter_notes/resources/components/list_of_notes.dart';
 import 'package:nylo_framework/nylo_framework.dart';
 import 'package:flutter/material.dart';
 import '/resources/widgets/responsive.dart';

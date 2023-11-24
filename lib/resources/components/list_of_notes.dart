@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_app/app/models/notes.dart';
-import 'package:flutter_app/config/constants.dart';
-import 'package:flutter_app/resources/components/email_card.dart';
-import 'package:flutter_app/resources/widgets/responsive.dart';
+import 'package:flutter_notes/app/models/notes.dart';
+import 'package:flutter_notes/config/constants.dart';
+import 'package:flutter_notes/resources/components/email_card.dart';
+import 'package:flutter_notes/resources/widgets/responsive.dart';
 
 import 'package:flutter/foundation.dart' show kIsWeb;
 

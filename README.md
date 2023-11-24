@@ -6,7 +6,7 @@
   <a href="#"><img alt="GitHub stars" src="https://img.shields.io/github/stars/nylo-core/nylo?style=plastic"></a>
 </p>
 
-## [Demo](https://lukki15.github.io/responsive_note_app)
+## [Demo](https://lukki15.github.io/flutter-notes)
 
 ## Nylo
 

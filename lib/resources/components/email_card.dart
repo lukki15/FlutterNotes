@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_app/app/models/notes.dart';
+import 'package:flutter_notes/app/models/notes.dart';
 
 class EmailCard extends StatelessWidget {
   final Notes note;
