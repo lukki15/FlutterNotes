@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_notes/app/models/notes.dart';
 import 'package:flutter_notes/config/constants.dart';
 import 'package:flutter_notes/resources/components/email_card.dart';
+import 'package:flutter_notes/resources/components/side_menu.dart';
 import 'package:flutter_notes/resources/widgets/responsive.dart';
 
 import 'package:flutter/foundation.dart' show kIsWeb;
@@ -103,14 +104,5 @@ class ListOfNotes extends StatelessWidget {
         ),
       ),
     );
-  }
-}
-
-class SideMenu extends StatelessWidget {
-  const SideMenu({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return const Placeholder();
   }
 }

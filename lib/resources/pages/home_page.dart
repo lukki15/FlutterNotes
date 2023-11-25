@@ -1,7 +1,9 @@
-import 'package:flutter_notes/resources/components/list_of_notes.dart';
 import 'package:nylo_framework/nylo_framework.dart';
 import 'package:flutter/material.dart';
 import '/resources/widgets/responsive.dart';
+
+import 'package:flutter_notes/resources/components/list_of_notes.dart';
+import 'package:flutter_notes/resources/components/side_menu.dart';
 
 class HomePage extends NyPage {
   static String path = '/home';
@@ -47,7 +49,7 @@ class _Desktop extends StatelessWidget {
     return Row(children: [
       Expanded(
         flex: _size.width > 1340 ? 2 : 4,
-        child: _SideMenu(),
+        child: SideMenu(),
       ),
       Expanded(
         flex: _size.width > 1340 ? 3 : 5,
@@ -58,13 +60,6 @@ class _Desktop extends StatelessWidget {
         child: _EmailScreen(),
       )
     ]);
-  }
-}
-
-class _SideMenu extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return const Placeholder();
   }
 }
 
