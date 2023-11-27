@@ -19,11 +19,9 @@ class Tags extends StatelessWidget {
             SizedBox(width: kDefaultPadding / 2),
             Text("Tags"),
             Spacer(),
-            MaterialButton(
-              padding: EdgeInsets.all(10),
-              minWidth: 40,
+            IconButton(
               onPressed: () {},
-              child: Icon(
+              icon: Icon(
                 Icons.add,
                 size: 20,
               ),
