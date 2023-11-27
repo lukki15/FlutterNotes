@@ -11,35 +11,28 @@ class EmailCard extends StatelessWidget {
     List<String> date_split = note.date.split('.');
     String date_day = date_split.first;
     String date_month = date_split[1];
-    String date_year = date_split[2];
+    // String date_year = date_split[2];
     return Center(
       child: Card(
-        child: Column(
-          mainAxisSize: MainAxisSize.min,
-          children: <Widget>[
-            ListTile(
-              leading: Column(
-                children: [
-                  Text(
-                    date_day,
-                    style: TextStyle(fontSize: 16),
-                  ),
-                  Text(date_month + "/" + date_year),
-                  // Text(note.time),
-                ],
-              ),
-              title: Text(
-                note.title,
-                maxLines: 1,
-                overflow: TextOverflow.clip,
-              ),
-              subtitle: Text(
-                note.body,
-                overflow: TextOverflow.ellipsis,
-                maxLines: 2,
-              ),
+        child: ListTile(
+          leading: CircleAvatar(
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                Text(date_day),
+                Text(
+                  date_month,
+                  style: TextStyle(fontSize: 10),
+                ),
+              ],
             ),
-          ],
+          ),
+          title: Text(note.title),
+          subtitle: Text(
+            note.body,
+            maxLines: 2,
+            overflow: TextOverflow.ellipsis,
+          ),
         ),
       ),
     );
