@@ -20,10 +20,10 @@ class SideMenuItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.only(top: kDefaultPadding),
-      child: InkWell(
-        onTap: press,
+    return InkWell(
+      onTap: press,
+      child: Padding(
+        padding: const EdgeInsets.only(top: kDefaultPadding),
         child: Row(
           children: [
             (isActive || isHover)
