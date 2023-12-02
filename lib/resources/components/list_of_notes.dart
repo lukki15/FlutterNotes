@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 import 'package:flutter_notes/app/models/notes.dart';
 import 'package:flutter_notes/config/constants.dart';
 import 'package:flutter_notes/resources/components/email_card.dart';

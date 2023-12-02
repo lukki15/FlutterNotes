@@ -2,8 +2,10 @@ import 'package:nylo_framework/nylo_framework.dart';
 import 'package:flutter/material.dart';
 import '/resources/widgets/responsive.dart';
 
+import 'package:flutter_notes/resources/components/email_screen.dart';
 import 'package:flutter_notes/resources/components/list_of_notes.dart';
 import 'package:flutter_notes/resources/components/side_menu.dart';
+import 'package:flutter_notes/app/models/notes.dart';
 
 class HomePage extends NyPage {
   static String path = '/home';
@@ -35,7 +37,7 @@ class _Tablet extends StatelessWidget {
       ),
       Expanded(
         flex: 9,
-        child: _EmailScreen(),
+        child: EmailScreen(note: notes[0]),
       )
     ]);
   }
@@ -57,15 +59,8 @@ class _Desktop extends StatelessWidget {
       ),
       Expanded(
         flex: _size.width > 1340 ? 8 : 10,
-        child: _EmailScreen(),
+        child: EmailScreen(note: notes[0]),
       )
     ]);
-  }
-}
-
-class _EmailScreen extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return const Placeholder();
   }
 }
