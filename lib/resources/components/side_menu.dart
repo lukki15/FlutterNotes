@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_notes/resources/widgets/responsive.dart';
 import 'package:flutter_notes/config/constants.dart';
 import 'side_menu_item.dart';
 import 'tags.dart';
