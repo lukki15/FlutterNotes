@@ -9,11 +9,11 @@ class AppProvider implements NyProvider {
   @override
   boot(Nylo nylo) async {
     await NyLocalization.instance.init(
-        localeType: localeType,
-        languageCode: languageCode,
-        languagesList: languagesList,
-        assetsDirectory: assetsDirectory,
-        valuesAsMap: valuesAsMap,
+      localeType: localeType,
+      languageCode: languageCode,
+      languagesList: languagesList,
+      assetsDirectory: assetsDirectory,
+      valuesAsMap: valuesAsMap,
     );
 
     nylo.appLoader = loader;
@@ -28,7 +28,5 @@ class AppProvider implements NyProvider {
   }
 
   @override
-  afterBoot(Nylo nylo) async {
-
-  }
+  afterBoot(Nylo nylo) async {}
 }

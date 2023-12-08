@@ -15,7 +15,8 @@ import '/app/networking/api_service.dart';
 */
 
 final Map<Type, dynamic> modelDecoders = {
-  List<User>: (data) => List.from(data).map((json) => User.fromJson(json)).toList(),
+  List<User>: (data) =>
+      List.from(data).map((json) => User.fromJson(json)).toList(),
   //
   User: (data) => User.fromJson(data),
 
@@ -39,7 +40,6 @@ final Map<Type, BaseApiService> apiDecoders = {
   // ...
 };
 
-
 /*
 |--------------------------------------------------------------------------
 | Controller Decoders
@@ -51,8 +51,5 @@ final Map<Type, BaseApiService> apiDecoders = {
 |--------------------------------------------------------------------------
 */
 final Map<Type, BaseController> controllers = {
-
   // ...
-
 };
-

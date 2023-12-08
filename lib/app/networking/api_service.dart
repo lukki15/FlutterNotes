@@ -21,13 +21,12 @@ class ApiService extends BaseApiService {
 
   @override
   final interceptors = {
-    if (getEnv('APP_DEBUG') == true)
-    PrettyDioLogger: PrettyDioLogger()
+    if (getEnv('APP_DEBUG') == true) PrettyDioLogger: PrettyDioLogger()
   };
 
   Future fetchTestData() async {
     return await network(
-        request: (request) => request.get("/endpoint-path"),
+      request: (request) => request.get("/endpoint-path"),
     );
   }
 }

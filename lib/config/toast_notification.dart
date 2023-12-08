@@ -2,9 +2,10 @@ import 'package:nylo_framework/nylo_framework.dart';
 
 /// ToastNotificationStyleMetaHelper is used to return
 /// the correct value for the [ToastNotificationStyleType] toast style.
-class NyToastNotificationStyleMetaHelper extends ToastNotificationStyleMetaHelper {
-
-  NyToastNotificationStyleMetaHelper(ToastNotificationStyleType? style) : super(style);
+class NyToastNotificationStyleMetaHelper
+    extends ToastNotificationStyleMetaHelper {
+  NyToastNotificationStyleMetaHelper(ToastNotificationStyleType? style)
+      : super(style);
 
   onSuccess() {
     return ToastMeta.success();

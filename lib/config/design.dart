@@ -20,12 +20,15 @@ Widget logo = Logo();
 Widget loader = Loader();
 // resources/widgets/loader_widget.dart
 
-Widget getToastNotificationWidget({
-  required ToastNotificationStyleType style,
-  Function(ToastNotificationStyleMetaHelper helper)? toastNotificationStyleMeta, Function? onDismiss}) {
+Widget getToastNotificationWidget(
+    {required ToastNotificationStyleType style,
+    Function(ToastNotificationStyleMetaHelper helper)?
+        toastNotificationStyleMeta,
+    Function? onDismiss}) {
   if (toastNotificationStyleMeta == null) return SizedBox.shrink();
 
-  ToastMeta toastMeta = toastNotificationStyleMeta(NyToastNotificationStyleMetaHelper(style));
+  ToastMeta toastMeta =
+      toastNotificationStyleMeta(NyToastNotificationStyleMetaHelper(style));
 
   return ToastNotification(toastMeta, onDismiss: onDismiss);
   // resources/widgets/toast_notification.dart

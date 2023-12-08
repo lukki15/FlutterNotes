@@ -18,6 +18,4 @@ final Map<Type, NyEvent> events = {
   LogoutEvent: LogoutEvent(),
   AuthUserEvent: AuthUserEvent(),
   SyncAuthToBackpackEvent: SyncAuthToBackpackEvent<User>(),
-
 };
-

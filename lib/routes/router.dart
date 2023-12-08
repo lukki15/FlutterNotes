@@ -13,9 +13,8 @@ import 'package:nylo_framework/nylo_framework.dart';
 */
 
 appRouter() => nyRoutes((router) {
-  router.route(HomePage.path, (context) => HomePage(), initialRoute: true);
-  // Add your routes here
+      router.route(HomePage.path, (context) => HomePage(), initialRoute: true);
+      // Add your routes here
 
-  // router.route(NewPage.path, (context) => NewPage(), transition: PageTransitionType.fade);
-
-});
+      // router.route(NewPage.path, (context) => NewPage(), transition: PageTransitionType.fade);
+    });
