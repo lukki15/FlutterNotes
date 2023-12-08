@@ -14,24 +14,27 @@ class EmailCard extends StatelessWidget {
     // String date_year = date_split[2];
     return Center(
       child: Card(
-        child: ListTile(
-          leading: CircleAvatar(
-            child: Column(
-              mainAxisSize: MainAxisSize.min,
-              children: [
-                Text(date_day),
-                Text(
-                  date_month,
-                  style: TextStyle(fontSize: 10),
-                ),
-              ],
+        child: InkWell(
+          onTap: () {},
+          child: ListTile(
+            leading: CircleAvatar(
+              child: Column(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  Text(date_day),
+                  Text(
+                    date_month,
+                    style: TextStyle(fontSize: 10),
+                  ),
+                ],
+              ),
             ),
-          ),
-          title: Text(note.title),
-          subtitle: Text(
-            note.body,
-            maxLines: 2,
-            overflow: TextOverflow.ellipsis,
+            title: Text(note.title),
+            subtitle: Text(
+              note.body,
+              maxLines: 2,
+              overflow: TextOverflow.ellipsis,
+            ),
           ),
         ),
       ),
